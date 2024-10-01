@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06301186-2339-4D69-87E8-0B7646FB7AA2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>C__Project</RootNamespace>
+    <AssemblyName>C#-Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Games.cs" />
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="CreateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProfile.Designer.cs">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Current.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Current.Designer.cs">
+      <DependentUpon>Current.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level3.Designer.cs">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProfile.Designer.cs">
+      <DependentUpon>NewProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic.Designer.cs">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeToGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeToGame.Designer.cs">
+      <DependentUpon>WelcomeToGame.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CreateProfile.resx">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Current.resx">
+      <DependentUpon>Current.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level2.resx">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level3.resx">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProfile.resx">
+      <DependentUpon>NewProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeToGame.resx">
+      <DependentUpon>WelcomeToGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-08-17 032324.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-thief-cartoon-character-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-police-chasing-man-illustration-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-08-17_04-29-05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-button-blue.svg.hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_306098961_ojNHBJD5RtbzjTLj69dK1j1NTQtyaPuF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_306098961_ojNHBJD5RtbzjTLj69dK1j1NTQtyaPuF1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\police-catch-the-thief-design-on-white-background-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326-3265399_new-game-button-start-new-game-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\police-catch-the-thief-design-on-white-background-free-vector1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thief-background-2gkj0k1y2nyyg2gg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thief-background-2gkj0k1y2nyyg2gg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thief-background-2gkj0k1y2nyyg2gg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catch the thief.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catch the thief1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1 %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catch the thief2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-button-png.svg.hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feature-Iamge36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28c3cf36def053bd599f8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thief-background-2gkj0k1y2nyyg2gg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-08-18_15-39-47.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_processing20200514-30880-izr3lk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_processing20200514-30880-izr3lk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\police_officer_character_blue_uniform_running_with_gun_vector_illustration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catch the thief FINALLL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\counter-strike-2-march-23-2023.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3313396-fb21-4890-bbb2-ded65e0e2092.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-need-for-speed-county-police-badge-police-officer-speed-__wolf-emblem-police-officer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3313396-fb21-4890-bbb2-ded65e0e20921.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28c3cf36def053bd599f81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_5417.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2850d0af6e01589dbd785e501caf35243c04550812e2ec01b44e397eea0c64e1_product_card_v2_mobile_slider_639.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thief.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capsule_616x353.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thief1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apU7AI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capsule_616x3531.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next-level-vintage-rusty-metal-sign-vector-22405548.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-08-27_17-23-20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-08-27_17-23-21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catchy catchy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thief&amp;police BG.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WHATS IS MINE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simulater.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thief_Sim_Hero.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thief-simulator-switch-hero.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\da02ed08a5c7f9bf9bfb6a5f60ae00db1c56cdefa845d5d61b87732bb32dad29_product_card_v2_mobile_slider_639.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-button-png-exit-arrow-login-logout-cancel-log-invitaciones-para-fiesta-mexicana-11563128428fx4qlzpgfz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-button-png-exit-arrow-login-logout-cancel-log-invitaciones-para-fiesta-mexicana-11563128428fx4qlzpgfz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-08-29_18-41-43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1748.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_1177.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wins.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand-and-star-signage-design-trendy-like-color-icon-thumbs-up-illustration-good-nice-ok-hand-gesture-social-media-button-rating-ranking-conto-2ABNGRW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-traffic-lights-cartoon-cards-personification-schematically-brand.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
